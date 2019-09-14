@@ -1,0 +1,48 @@
+<!-- templates/index.html -->
+
+
+<!-- TODO: Extend 'base.html' and put content into a block 'body' to match -->
+{% extends 'base.html' %}
+
+<!-- TODO: Make an HTML form containing a search box and a submit button to add
+    the search term to the query string. The form should have a target of '/' to
+    send us to the same route. -->
+    
+<!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
+{% block content %}
+    {% for gif in results %}
+        {% include "gif.html" %}
+    {% endfor %}
+{% endblock %}                         
+<!-- in jinja2, even if your end block is commented out, jinj2 will still count it                      -->
+
+<!-- TODO: For each gif, include the 'gif.html' template to display it -->
+
+
+
+
+
+<!-- 
+<form action='/compliment'>
+    <p>
+        <input name="Gifs" value="" size="80">
+        <input type="Submit" value="Submit">  
+    </p>
+</form>
+<p>
+    What do you want to find?
+    <input type="text" query = query/>
+</p>
+<p>
+    <input type="checkbox" name="show_compliments"/>
+    Show Compliments
+</p>
+<p>
+    How many compliments?
+    <select name="num_compliments">
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+</p>
+<h1>HERE</h1> -->
