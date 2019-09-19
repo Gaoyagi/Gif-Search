@@ -35,13 +35,17 @@
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
 
     <!-- iterates through all elements of the response_json dictionary and then parses all the relvent info of gifs to display them -->
-    <p id='gifs'>
-    {% for gif in results %}
-
-        {% include "gif.html" %}
-
-    {% endfor %}
-    </p>
+   {% if results != [] %}
+        <p id='gifs'>
+        {% for gif in results %}
+            {% include "gif.html" %}
+        {% endfor %}
+        </p>
+    {% else %}
+        <p>
+            No gifs found
+        </p>
+    {% endif %}
 
 {% endblock %}                         
 <!-- in jinja2, even if your end block is commented out, jinj2 will still count it                      -->
