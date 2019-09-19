@@ -9,12 +9,22 @@
     the search term to the query string. The form should have a target of '/' to
     send us to the same route. -->
 
-<form action = "/"> 
+
+
+<form action = "/" id='forms'> 
     <!-- asks user for input (input type is plain text) and sets the user input to "q" which will be used for query = request.args.get('q') in app.py -->
     <input type = "text" name = "q">    
     <input type="Submit"> 
 
 </form> 
+
+
+
+
+
+
+
+
 
 <!-- style="color: #ffffff; 
  font-family: Verdana; font-weight: bold; 
@@ -25,10 +35,14 @@
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
 
     <!-- iterates through all elements of the response_json dictionary and then parses all the relvent info of gifs to display them -->
-    {% for gif in results %}            
+    <p id='gifs'>
+    {% for gif in results %}
+
         {% include "gif.html" %}
+
     {% endfor %}
-    
+    </p>
+
 {% endblock %}                         
 <!-- in jinja2, even if your end block is commented out, jinj2 will still count it                      -->
 
