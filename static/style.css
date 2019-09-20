@@ -1,13 +1,16 @@
 p {
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 40%;
+    margin-left: 40%;
     width: 70%;
 }
 
 body {
+    
+    background-color: rgb(133, 192, 248);
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 5%;
-    margin: auto;
     text-align: center;
     
 }        
@@ -17,20 +20,40 @@ h1 {
     text-align: center;
     margin: auto;
     margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: darkolivegreen;
+    margin-left: 33%;
+    margin-right: 33%;
+    background-image: url("https://i.gyazo.com/977c0d6e356ff26b980febf1697ee1ba.png");
+    border: 1%;
     font-size: 70;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #forms {
+
     text-align: center;
     margin: auto;
-    background-color: bisque;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    border: 10%;
+    border-color: aqua;
+    background-color: rgb(184, 207, 221);
+
 }
 
 #gifs {
+
     background-color: azure;
-    
+    text-align: center;
+
+}
+
+#gifBig {
+
+    display: block;
+    background-color: azure;
+    margin-left: 70%;
+    text-align: center;
+    width: 100%;
+
 }

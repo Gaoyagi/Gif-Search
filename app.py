@@ -17,6 +17,7 @@ def index():
     "key": "U78L9P5SJIJZ",          #lets you access tenor with the api key
     "limit":10                      #tells pc how many gifs u want
     }
+
     # TODO: Make an API call to Tenor using the 'requests' library
     response = requests.get('https://api.tenor.com/v1/search', params=params) #adds params items to the end of the url      #response is an object misc response info
     # TODO: Get the first 10 results from the search results
